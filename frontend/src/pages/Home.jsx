@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Navbar from "../components/Navbar";
+import BackToTop from "../components/BackToTop";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import PredictionForm from "../components/PredictionForm";
@@ -41,6 +42,7 @@ export default function Home() {
     />
 
     <Footer />
+    <BackToTop />
 
   </div>
 );

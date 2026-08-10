@@ -1,8 +1,9 @@
 import { FaHome } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
   return (
     <motion.nav
       initial={{ y: -30, opacity: 0 }}
@@ -52,12 +53,16 @@ export default function Navbar() {
             About
           </NavLink>
 
-          <a
-            href="/#contact"
+          <button
+            onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
             className="text-slate-300 hover:text-cyan-400 transition"
           >
             Contact
-          </a>
+          </button>
 
         </div>
 
