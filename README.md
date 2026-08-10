@@ -149,7 +149,5 @@ npm run dev
 
 ## 👨‍💻 Author
 
-**Ashish Kumar**
-
 GitHub: https://github.com/a-sheeesh
 
